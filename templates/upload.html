@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar Archivos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        
+
+        <h1>Cargar un Archivo</h1>
+        <p>En este campo se puede poner una descripcion de lo que hace la aplicación</p>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label for="file" class="form-label">Seleccione un archivo CSV:</label>
+                <input type="file" class="form-control" id="file" name="file" accept=".csv" required>
+            </div>
+            <div class="mb-3">
+                <p>Funcionando correctamente todas las funciones, no esta optimizada para dectectar si el archivo es el correcto,
+                    <mark>seleccione correctamente la opcion que desea ejecutar</mark></p>
+                <label for="tipo" class="form-label">Seleccione el tipo de archivo:</label>
+                <select class="form-select" id="tipo" name="tipo" required>
+                    <option value="1">Estructuras Menores - Cartilla</option>
+                    <option value="2">Estructuras Mayores - Cartilla</option>
+                    <option value="3">Estructuras Menores - Tangram - Nota Técnica</option>
+                    <option value="4">Estructuras Mayores - Tangram - Nota Técnica</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="nombre_descarga" class="form-label">Nombre del archivo de descarga:</label>
+                <input type="text" class="form-control" id="nombre_descarga" name="nombre_descarga" placeholder="archivo_procesado">
+            </div>
+            <p>Para obtener el archivo modificado haga click en "Descargar"</p>
+            <button type="submit" class="btn btn-primary">Descargar</button>
+        </form>
+    </div>
+</body>
+</html>
