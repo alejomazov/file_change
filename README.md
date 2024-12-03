@@ -20,8 +20,8 @@ Interfaz sencilla: Carga de archivos a través de una página web y descarga dir
 Clonar este repositorio.
 
 ```
-git clone https://github.com/alejomazov/app_flask_vercel.git
-cd app_flask_vercel
+git clone https://github.com/alejomazov/file_change.git
+cd file_change
 ```
 Instalar las dependencias con pip:
 
